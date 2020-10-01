@@ -1,0 +1,14 @@
+name: 'Greet Users'
+description: 'Greet new contributors when they create their first issue or open their first pull request'
+author: 'GitHub'
+inputs:
+	repo-token:
+		description: '{{ secrets.GITHUB_TOKEN }}'
+		required: true
+	issue-message:
+		description: 'Thanks for creating the first issue. <br> **Welcome to open source community.**'
+	pr-message:
+		description: 'Thanks for creating the first pull request. <br> **Welcome to open source community.**'
+runs:
+	using: 'docker'
+	image: 'Dockerfile'
