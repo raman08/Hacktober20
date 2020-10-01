@@ -1,9 +1,9 @@
 - name: Greet Users
   uses: actions/first-interaction@v1.0.0
     with:
-	  # Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}
+      # Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}
       repo-token: ${{ secrets.GITHUB_TOKEN }}
-        # Comment to post on an individuals first issue
+      # Comment to post on an individuals first issue
       issue-message: 'Thanks for creating the first issue. <br> **Welcome to open source community.**'
-        # Comment to post on an individuals first pull request
+      # Comment to post on an individuals first pull request
       pr-message: 'Thanks for creating the first pull request. <br> **Welcome to open source community.**'
